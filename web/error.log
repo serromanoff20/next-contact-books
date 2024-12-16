@@ -1,0 +1,742 @@
+2023/05/25 23:36:39 [error] 12696#17428: *150 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:36:39 [error] 12696#17428: *150 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:36:39 [error] 12696#17428: *152 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:36:39 [error] 12696#17428: *152 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:36:39 [error] 12696#17428: *153 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:36:39 [error] 12696#17428: *153 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:36:39 [error] 12696#17428: *150 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:36:39 [error] 12696#17428: *150 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:36:41 [error] 12696#17428: *152 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request: site/logout in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#3 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE" while reading upstream, client: 127.0.0.1, server: localhost, request
+2023/05/25 23:36:41 [error] 12696#17428: *152 FastCGI sent in stderr: "' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\\AppData\\Local',
+    'LOGONSERVER' => '\\\\PDC',
+    'NUMBER_OF_PROCESSORS' => '4',
+    'NVM_HOME' => 'C:\\Users\\s.romanov\\AppData\\Roaming\\nvm',
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs',
+    'OneDrive' => 'C:\\Users\\s.romanov\\OneDrive',
+    'OneDriveConsumer' => 'C:\\Users\\s.romanov\\OneDrive',
+    'OS' => 'Windows_NT',
+    'Path' => 'C:\\Python39\\Scripts\\;C:\\Python39\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' =>
+2023/05/25 23:36:41 [error] 12696#17428: *152 FastCGI sent in stderr: "0',
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'HTTP_ORIGIN' => 'http://localhost:8080',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_CH_UA_PLATFORM' => '"Windows"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_CH_UA' => '"Chromium";v="112", "Not_A Brand";v="24", "Opera";v="98"',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONTENT_LENGTH' => '0',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_HOST' => 'localhost:8080',
+    'SCRIPT_FILENAME' => 'C:/Users/s.romanov/Desktop/Romanov_S/basic/repository/web//index.php',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_PORT' => '8080',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '63266',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.19.3',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REQUEST_SCHEME' => 'http',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => 'C:/Users/s.romanov/Desktop/Romanov_S/basic/repository/web',
+    'DOCUMENT_URI' => '/index.php',
+    'REQUEST_URI' => '/site/logout',
+    'SCRIPT_NAME' => '/index.php',
+    'CONTENT_LENGTH' => '0',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => '',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1685043401.840198,
+    'REQUEST_TIME' => 1685043401,
+]" while reading upstream, client: 127.0.0.1, server: localhost, request: "POST /site/logout HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8080", referrer: "http://localhost:8080/"
+2023/05/25 23:37:21 [error] 12696#17428: *162 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:21 [error] 12696#17428: *162 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:37:21 [error] 12696#17428: *164 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:21 [error] 12696#17428: *164 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:37:21 [error] 12696#17428: *162 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:21 [error] 12696#17428: *162 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:37:21 [error] 12696#17428: *167 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:21 [error] 12696#17428: *167 FastCGI sent in stderr: "m32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=6ajmfnpetub3g9mbc5bgmo75k9; _identity=718c2bb4ac8e1fab992558aee82743acf019f10661e60d05e0bcd
+2023/05/25 23:37:23 [error] 12696#17428: *167 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:23 [error] 12696#17428: *167 FastCGI sent in stderr: "ta\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => '_csrf=c14bd9dd91e432bff5bc799247244adda488f3fe278d509cbd875cd1b51034cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225wvELviOeSfOQtmAJlo83n4xjI
+2023/05/25 23:37:23 [error] 12696#17428: *162 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:23 [error] 12696#17428: *162 FastCGI sent in stderr: "ta\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => '_csrf=c14bd9dd91e432bff5bc799247244adda488f3fe278d509cbd875cd1b51034cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225wvELviOeSfOQtmAJlo83n4xjI
+2023/05/25 23:37:23 [error] 12696#17428: *171 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:23 [error] 12696#17428: *171 FastCGI sent in stderr: "ta\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => '_csrf=c14bd9dd91e432bff5bc799247244adda488f3fe278d509cbd875cd1b51034cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225wvELviOeSfOQtmAJlo83n4xjI
+2023/05/25 23:37:23 [error] 12696#17428: *172 FastCGI sent in stderr: "An Error occurred while handling another error:
+yii\base\InvalidRouteException: Unable to resolve the request: site/error in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Controller.php:151
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\ErrorHandler.php(109): yii\base\Module->runAction()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\ErrorHandler.php(135): yii\web\ErrorHandler->renderException()
+#3 [internal function]: yii\base\ErrorHandler->handleException()
+#4 {main}
+Previous exception:
+yii\web\NotFoundHttpException: Page not found. in C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Request.php:287
+Stack trace:
+#0 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#2 C:\Users\s.romanov\Desktop\Romanov_S\basic\repository\web\index.php(13): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData',
+    'APPDATA' => 'C:\\Users\\s.romanov\\AppData\\Roaming',
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey',
+    'ChocolateyLastPathUpdate' => '132499874857772472',
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files',
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files',
+    'COMPUTERNAME' => 'PROGRAMMER4',
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe',
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData',
+    'HOMEDRIVE' => 'C:',
+    'HOMEPATH' => '\\Users\\s.romanov',
+    'LOCALAPPDATA' => 'C:\\Users\\s.romanov\
+2023/05/25 23:37:23 [error] 12696#17428: *172 FastCGI sent in stderr: "ta\\chocolatey\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\PHP\\php-8.1.7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\\Users\\s.romanov\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;;C:\\Users\\s.romanov\\AppData\\Roaming\\npm;C:\\Program Files\\Azure Data Studio\\bin;C:\\PHP\\php-8.1.7\\composer\\;C:\\Users\\s.romanov\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\PHP\\php-8.1.7\\;C:\\Users\\s.romanov\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2020.3\\bin;',
+    'PROCESSOR_ARCHITECTURE' => 'AMD64',
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 11, GenuineIntel',
+    'PROCESSOR_LEVEL' => '6',
+    'PROCESSOR_REVISION' => '9e0b',
+    'ProgramData' => 'C:\\ProgramData',
+    'ProgramFiles' => 'C:\\Program Files',
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)',
+    'ProgramW6432' => 'C:\\Program Files',
+    'PROMPT' => '$P$G',
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    'PUBLIC' => 'C:\\Users\\Public',
+    'SESSIONNAME' => 'Console',
+    'SystemDrive' => 'C:',
+    'SystemRoot' => 'C:\\Windows',
+    'TEMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'TMP' => 'C:\\Users\\S4325~1.ROM\\AppData\\Local\\Temp',
+    'USERDNSDOMAIN' => 'SARPLAT.LOCAL',
+    'USERDOMAIN' => 'SARPLAT',
+    'USERDOMAIN_ROAMINGPROFILE' => 'SARPLAT',
+    'USERNAME' => 's.romanov',
+    'USERPROFILE' => 'C:\\Users\\s.romanov',
+    'windir' => 'C:\\Windows',
+    'HTTP_COOKIE' => '_csrf=c14bd9dd91e432bff5bc799247244adda488f3fe278d509cbd875cd1b51034cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225wvELviOeSfOQtmAJlo83n4xjI
