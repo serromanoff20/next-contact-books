@@ -42,20 +42,6 @@ AppAsset::register($this);
             ['label' => 'Главная', 'url' => ['/site/index']],
             ['label' => 'Добавить книгу', 'url' => ['/site/add-book']],
             ['label' => 'Добавить автора', 'url' => ['/site/add-author']],
-//            ['label' => 'Поиск', 'url' => ['#']],
-//            Yii::$app->user->isGuest ? (
-//                ['label' => 'Вход', 'url' => ['/site/login']]
-//            ) : (
-//                    ['label' => 'Выход', 'url' => ['/site/logout']]
-//                '<li>'
-//                Html::beginForm(['/auth/logout'], 'post')
-//                . Html::submitButton(
-//                    'Выход',
-//                    ['class' => 'btn btn-link logout']
-//                )
-//                .Html::endForm()
-//                . '</li>'
-//            )
         ]
     ]);
     NavBar::end();

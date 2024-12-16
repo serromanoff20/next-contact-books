@@ -19,9 +19,56 @@ $this->params['author'] = $model::$_author;
 <div class="site-login">
     <h1>Список книг</h1>
     <br />
-    <div id="message" class="display-none">
+    <div id="message" class="d-none">
         <p></p>
     </div>
+
+
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="">
+            <div class="form-check">
+                <label class="form-check-label" for="name">
+                    <input class="form-check-input" type="radio" name="sortBy" id="sortBy" value="name" checked>
+
+                    Сорт. по наименованию произведения
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label" for="public_year">
+                    <input class="form-check-input" type="radio" name="sortBy" id="sortBy" value="public_year">
+
+                    Сорт. по году издания
+                </label>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="d-flex justify-content-end">
+                <input class="form-check-input m-1" id="byShortNameAuthor" type="checkbox">
+                <label class="" for="byShortNameAuthor">
+                    по автору
+                </label>
+                <input class="form-check-input m-1" id="byGenre" type="checkbox">
+                <label class="" for="byGenre">
+                    по жанру
+                </label>
+                <input class="form-check-input m-1" id="byPublicYear" type="checkbox">
+                <label class="" for="byPublicYear">
+                    по году издания
+                </label>
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <label for="search" class="w-100 d-flex justify-content-start">
+                    <input class="form-control m-1" id="search" type="text" placeholder="Поиск...">
+                    <input class="btn btn-primary m-1" type="button" value="&#128269;">
+                </label>
+            </div>
+        </div>
+    </div>
+
+
     <br />
     <div class="all_data" id=data>
         <?php for($i=0; $i<count($this->params['id']); $i++): ?>

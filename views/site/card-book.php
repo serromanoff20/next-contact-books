@@ -10,7 +10,7 @@ $options = $model->getAuthorOption($model->author_id);
 <div class="site-login">
     <h1>id: <?= $model->id ?></h1>
     <br />
-    <div id="message" class="display-none">
+    <div id="message" class="d-none">
         <p></p>
     </div>
     <br />

@@ -110,3 +110,12 @@ function failRemoved(xhr, status, error) {
 
     console.error("Ошибка: ", error);
 }
+
+$(document).ready(() => {
+
+    console.log($("#sortBy").val());
+
+    $("#search").keyup(() => {
+        console.log($("#search").val());
+    });
+})
