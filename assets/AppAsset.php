@@ -26,6 +26,7 @@ class AppAsset extends AssetBundle
     public $js = [
         "https://code.jquery.com/jquery-3.6.4.min.js",
 //        JqueryAsset::class,
+        'js/books-script.js',
         'js/script.js'
     ];
 

@@ -73,6 +73,11 @@ class Author extends ActiveRecord
         return self::find()->select(['id', 'short_name'])->where(['not', ['id' => $id]])->asArray()->all();
     }
 
+    public function getAuthorIdByLikeShortName(string $value): array
+    {
+        return self::find()->select('id')->where(['ilike', 'short_name', $value])->asArray()->all();
+    }
+
     public function editAuthor(): bool
     {
         $this->setScenario(self::SCENARIO_EDIT);

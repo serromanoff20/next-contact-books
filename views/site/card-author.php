@@ -5,7 +5,6 @@
 
 use app\models\authors\Author;
 
-//$options = $model->getAuthorOption($model->author_id);
 ?>
 <div class="site-login">
     <h1>id: <?= $model->id ?></h1>
@@ -17,21 +16,21 @@ use app\models\authors\Author;
 
     <form class="site-login" id="formEditingAuthor">
 
-        <div class="mb-3 row">
+        <div class="mb-3 row required">
             <label for="full_name" class="col-lg-2 control-label">Полное ФИО: </label>
             <div class="col-lg-4">
                 <input type="text" class="form-control" id="full_name" name="full_name" value="<?= $model->full_name ?>">
             </div>
         </div>
 
-        <div class="mb-3 row">
+        <div class="mb-3 row required">
             <label for="short_name" class="col-lg-2 control-label">Фамилия: </label>
             <div class="col-lg-3">
                 <input type="text" class="form-control" id="short_name" name="short_name" value="<?= $model->short_name ?>">
             </div>
         </div>
 
-        <div class="mb-3 row">
+        <div class="mb-3 row required">
             <label for="birthday_date" class="col-lg-2 control-label">Дата рождения: </label>
             <div class="col-lg-3">
                 <input type="text" class="form-control" id="birthday_date" name="birthday_date" value="<?= $model->birthday_date ?>">

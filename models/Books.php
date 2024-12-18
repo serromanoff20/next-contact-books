@@ -104,19 +104,52 @@ class Books extends ActiveRecord
     }
 
     /**
-     * @return void
+     * @param string $sort
+     * @param array $filter
+     * @return array
      */
-    public function getAllBooks(): void
+    public function getAllBooks(string $sort, array $filter=[]): array
     {
-        $arr_result = self::find()->all();
+        if ( empty(array_values($filter)[0]) ) {
 
-        foreach ($arr_result as $key => $book) {
-            self::$_ids[$key] = $book['id'];
-            self::$_names[$key] = $book['name'];
-            self::$_genre[$key] = $book['genre'];
-            self::$_public_year[$key] = $book['public_year'];
-            self::$_author[$key] = $this->getAuthorByAuthorId((int)$book['author_id']);
+            $arr_result = self::find()->orderBy([$sort => 'ASC'])->asArray()->all();
+        } else {
+            $filterOnProps = array_key_first($filter);
+
+            switch ($filterOnProps) {
+                case 'authors_id':
+                    $new_author_id = [];
+                    $ids = $filter['authors_id'];
+
+                    foreach ($ids as $id) {
+                        $new_author_id[] = $id['id'];
+                    }
+
+                    $arr_result = self::find()->where(['in', 'author_id', $new_author_id])->orderBy([$sort => 'ASC'])->asArray()->all();
+                    break;
+                case 'genre':
+                    $filterByValue = strtolower($filter[$filterOnProps]);
+
+                    $arr_result = self::find()->where(['ilike', $filterOnProps, $filterByValue])->orderBy([$sort => 'ASC'])->asArray()->all();
+                    break;
+                case 'public_year':
+                    $filterByValue = strtolower($filter[$filterOnProps]);
+
+                    if ( (integer)$filterByValue > 0) {
+                        $arr_result = self::find()->where([$filterOnProps => $filterByValue])->orderBy([$sort => 'ASC'])->asArray()->all();
+                    }
+                    break;
+            }
         }
+
+        if (isset($arr_result)) {
+            foreach ($arr_result as $key => $book) {
+                $arr_result[$key]['author_short_name'] = $this->getAuthorByAuthorId((int)$book['author_id']);
+            }
+        }
+
+
+        return $arr_result ?? [];
     }
 
     public function getAuthorByAuthorId(int $author_id): string

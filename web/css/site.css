@@ -183,7 +183,7 @@ div.required label.control-label:after {
     display: block;
     border: lightgreen 2px solid;
     border-radius: 5px;
-    width: 40%;
+    width: 65%;
     padding: 2%;
     margin: 2% 0;
 }

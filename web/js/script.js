@@ -6,8 +6,8 @@ function removeBook(idBook) {
         type: "DELETE",
         dataType: 'json',
         data: {idBook: idBook},
-        success: successRemoved,
-        error: failRemoved,
+        success: successEvent,
+        error: failEvent,
     });
 }
 
@@ -25,8 +25,8 @@ function editBook(id) {
         type: "PUT",
         dataType: 'json',
         data: params,
-        success: successRemoved,
-        error: failRemoved,
+        success: successEvent,
+        error: failEvent,
     });
 }
 
@@ -36,8 +36,8 @@ function removeAuthor(idAuthor) {
         type: "delete",
         dataType: 'json',
         data: {idAuthor: idAuthor},
-        success: successRemoved,
-        error: failRemoved,
+        success: successEvent,
+        error: failEvent,
     });
 }
 
@@ -50,14 +50,13 @@ function editAuthor(id) {
         params[element.name] = element.value;
     });
 
-    console.log(params);
     $.ajax({
         url: "http://localhost:8083/ajax/edit-author",
         type: "PUT",
         dataType: 'json',
         data: params,
-        success: successRemoved,
-        error: failRemoved,
+        success: successEvent,
+        error: failEvent,
     });
 }
 
@@ -67,26 +66,25 @@ function redirectCard(id, page) {
     window.location.href = 'http://localhost:8083/site/card-'+ del_s +'?id-' + del_s + '='+id;
 }
 
-function successRemoved(response){
+function successEvent(response){
     let messageElement = $('#message');
+    let responseData = response.data;
+    let responseMessage  = ('messages' in response) ? response.messages : "";
 
-    if ("deleted" in response && !!response.deleted) {
+    if ("deleted" in responseData && !!responseData.deleted) {
 
-        alert(response.message);
-        if ("redirectPage" in response) {
-            window.location.href = "http://localhost:8083/"+response.redirectPage;
+        alert(responseMessage);
+        if ("redirectPage" in responseData) {
+            window.location.href = "http://localhost:8083/site/"+responseData.redirectPage;
         } else {
             window.location.href = "http://localhost:8083/";
         }
 
-    } else if ("edited" in response && !!response.edited) {
+    } else if ("edited" in responseData && !!responseData.edited) {
 
-        classMessage = 'success-message';
-        messageElement.attr('class', classMessage);
-        messageElement.children(":first").html(response.message);
-        alert(response.message);
-        if ("redirectPage" in response) {
-            window.location.href = "http://localhost:8083/"+response.redirectPage;
+        alert(responseMessage);
+        if ("redirectPage" in responseData) {
+            window.location.href = "http://localhost:8083/site/"+responseData.redirectPage;
         } else {
             window.location.href = "http://localhost:8083/";
         }
@@ -94,13 +92,13 @@ function successRemoved(response){
     } else {
 
         classMessage = 'error-message';
-        messageElement.children(":first").html(response.message.Error[0]);
-        alert(response.message.Error[0]);
+        messageElement.children(":first").html(responseMessage.Error[0]);
+        alert(responseMessage.Error[0]);
 
     }
 }
 
-function failRemoved(xhr, status, error) {
+function failEvent(xhr, status, error) {
     let messageElement = $('#message');
 
     classMessage = 'error-message';
@@ -110,12 +108,3 @@ function failRemoved(xhr, status, error) {
 
     console.error("Ошибка: ", error);
 }
-
-$(document).ready(() => {
-
-    console.log($("#sortBy").val());
-
-    $("#search").keyup(() => {
-        console.log($("#search").val());
-    });
-})

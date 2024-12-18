@@ -22,10 +22,10 @@ class AjaxController extends Controller
     {
         $behaviors['access'] = [
             'class' => AccessControl::class,
-            'only' => ['delete-book',],
+            'only' => ['select-books', 'edit-book', 'delete-book', 'edit-author', 'delete-author', ],
             'rules' => [
                 [
-                    'actions' => ['delete-book',],
+                    'actions' => ['select-books', 'edit-book', 'delete-book', 'edit-author', 'delete-author', ],
                     'allow' => true,
                     'roles' => ['?', '@'],//all users
                 ]
@@ -35,7 +35,11 @@ class AjaxController extends Controller
         $behaviors['verbs'] = [
             'class' => VerbFilter::class,
             'actions' => [
+                'select-books' => ['get'],
+                'edit-book' => ['put'],
                 'delete-book' => ['delete'],
+                'edit-author' => ['put'],
+                'delete-author' => ['delete'],
 
             ]
         ];
@@ -49,6 +53,36 @@ class AjaxController extends Controller
 
 
         return $behaviors;
+    }
+
+    public function actionSelectBooks(): array
+    {
+        $data = [];
+        if (Yii::$app->getRequest()->isGet) {
+            $sort = Yii::$app->getRequest()->getQueryParam('sortBy') ?? '';
+            $filterOnProps = Yii::$app->getRequest()->getQueryParam('filterOnProps') ?? '';
+            $filterByValue = Yii::$app->getRequest()->getQueryParam('filterByValue') ?? '';
+
+            $model = new Books();
+            if ( empty($filterByValue) ) {
+
+                $data = $model->getAllBooks($sort);
+            } else if ( !empty($filterOnProps) && !in_array($filterOnProps, $model->attributes()) ) {
+                $authors_id = (new Author())->getAuthorIdByLikeShortName(trim($filterByValue));
+
+                if ( !empty($authors_id) ) {
+
+                    return $model->getAllBooks($sort, ['authors_id' => $authors_id]);
+                }
+
+                return $data;
+            } else if ( !empty($filterOnProps) && in_array($filterOnProps, $model->attributes()) ) {
+
+                $data = $model->getAllBooks($sort, [$filterOnProps => trim($filterByValue)]);
+            }
+        }
+
+        return $data;
     }
 
     /**
@@ -80,21 +114,27 @@ class AjaxController extends Controller
             ) {
 
                 return [
-                    'edited' => true,
-                    'message' => 'Книга с id - ' . $id . ' отредактирована',
-                    'redirectPage' => 'books',
+                    'data' => [
+                        'edited' => true,
+                        'redirectPage' => 'books',
+                    ],
+                    'messages' => 'Книга с id - ' . $id . ' отредактирована',
                 ];
             }
 
             return [
-                'deleted' => false,
-                'message' => $model->getErrors(),
+                'data' => [
+                    'edited' => false,
+                ],
+                'messages' => $model->getErrors(),
             ];
         }
 
         return [
-            'edited' => false,
-            'message' => ['Error' => ['Invalid method request']],
+            'data' => [
+                'edited' => false,
+            ],
+            'messages' => ['Error' => ['Invalid method request']],
         ];
     }
 
@@ -111,21 +151,27 @@ class AjaxController extends Controller
             if ($model->load(['id' => $params], '') && $model->deleteBookById()) {
 
                 return [
-                    'deleted' => true,
-                    'message' => 'Книга с id - ' . $params . ' была удалена',
-                    'redirectPage' => 'books',
+                    'data' => [
+                        'deleted' => true,
+                        'redirectPage' => 'books',
+                    ],
+                    'messages' => 'Книга с id - ' . $params . ' была удалена',
                 ];
             }
 
             return [
-                'deleted' => false,
-                'message' => $model->getErrors(),
+                'data' => [
+                    'deleted' => false,
+                ],
+                'messages' => $model->getErrors(),
             ];
         }
 
         return [
-            'deleted' => false,
-            'message' => ['Error' => ['Invalid method request']],
+            'data' => [
+                'deleted' => false,
+            ],
+            'messages' => ['Error' => ['Invalid method request']],
         ];
     }
 
@@ -160,21 +206,28 @@ class AjaxController extends Controller
             ) {
 
                 return [
-                    'edited' => true,
-                    'message' => 'Автор с id - ' . $id . ' отредактирован',
-                    'redirectPage' => 'authors',
+                    'data' => [
+                        'edited' => true,
+                        'redirectPage' => 'authors',
+                    ],
+                    'messages' => 'Автор с id - ' . $id . ' отредактирован',
+
                 ];
             }
 
             return [
-                'deleted' => false,
-                'message' => $model->getErrors(),
+                'data' => [
+                    'edited' => false,
+                ],
+                'messages' => $model->getErrors(),
             ];
         }
 
         return [
-            'edited' => false,
-            'message' => ['Error' => ['Invalid method request']],
+            'data' => [
+                'edited' => false,
+            ],
+            'messages' => ['Error' => ['Invalid method request']],
         ];
     }
 
@@ -191,21 +244,49 @@ class AjaxController extends Controller
             if ($model->load(['id' => $params], '') && $model->deleteAuthorById()) {
 
                 return [
-                    'deleted' => true,
-                    'message' => 'Автор с id - ' . $params . ' был удалён',
-                    'redirectPage' => 'authors',
+                    'data' => [
+                        'deleted' => true,
+                        'redirectPage' => 'authors',
+                    ],
+                    'messages' => 'Автор с id - ' . $params . ' был удалён',
                 ];
             }
 
             return [
-                'deleted' => false,
-                'message' => $model->getErrors(),
+                'data' => [
+                    'deleted' => false,
+                ],
+                'messages' => $model->getErrors(),
             ];
         }
 
         return [
-            'deleted' => false,
-            'message' => ['Error' => ['Invalid method request']],
+            'data' => [
+                'deleted' => false,
+            ],
+            'messages' => ['Error' => ['Invalid method request']],
+        ];
+    }
+
+    public function afterAction($action, $result): array
+    {
+        if ( empty($result) ) {
+            return [
+                'data' => [],
+                'messages' => "Данные не найдены",
+            ];
+        }
+
+        if ( isset($result['messages']) ) {
+            return [
+                'data' => $result['data'],
+                'messages' => $result['messages'],
+            ];
+        }
+
+        return [
+            'data' => $result,
+            'messages' => "",
         ];
     }
 }
