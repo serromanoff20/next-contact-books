@@ -1,9 +1,9 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Books */
+/* @var $model Books */
 
-use app\models\Books;
+use app\models\books\Books;
 
 $this->title = 'My Books';
 

@@ -1,14 +1,10 @@
 <?php namespace app\controllers;
 
 use app\models\authors\Author;
-use app\models\Books;
-use app\models\forms\AddAuthor;
-use app\models\forms\AddBook;
+use app\models\books\Books;
 use DateTime;
 use Exception;
-use http\Exception\InvalidArgumentException;
 use Yii;
-use yii\base\InvalidConfigException;
 use yii\filters\AccessControl;
 use yii\filters\ContentNegotiator;
 use yii\filters\VerbFilter;
@@ -148,7 +144,10 @@ class AjaxController extends Controller
                 (int)Yii::$app->getRequest()->getBodyParam('idBook') : 0;
 
             $model = new Books();
-            if ($model->load(['id' => $params], '') && $model->deleteBookById()) {
+            if (
+                $model->load(['id' => $params], '')
+                && $model->deleteBookById()
+            ) {
 
                 return [
                     'data' => [

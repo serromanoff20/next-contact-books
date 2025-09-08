@@ -1,13 +1,11 @@
-<?php
-namespace app\models;
+<?php namespace app\models\books;
 
 use app\models\authors\Author;
 use Throwable;
+use yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
-use yii;
 use yii\db\Connection;
-use yii\db\Exception;
 
 /**
  * Class Books

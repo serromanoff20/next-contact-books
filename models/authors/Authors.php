@@ -1,8 +1,5 @@
 <?php namespace app\models\authors;
 
-//use authors\Author;
-
-
 class Authors extends Author
 {
     /**

@@ -1,6 +1,6 @@
 <?php namespace app\models\forms;
 
-use app\models\Books;
+use app\models\books\Books;
 use yii\base\Model;
 
 /**

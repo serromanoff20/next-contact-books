@@ -1,9 +1,9 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $model Books */
+/* @var $model \app\models\books\Books */
 
-use app\models\Books;
+use app\models\books\Books;
 
 $options = $model->getAuthorOption($model->author_id);
 ?>
